@@ -1,13 +1,21 @@
 <!DOCTYPE html>
+<!-- Fortæller browseren hvilken type kode filen er i. Her er den HTML. -->
 <html lang="en">
+    <!-- Fortæller hvilket sprog browseren skal se siden som. Mest relevant for maskineoplæsning. -->
 <head>
+    <!-- Head taget indeholder alt det kode som brugeren ikke skal kunne se eller arbejde med direkte. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML tags</title>
+    <!-- Dette er hvad der skal stå i (på?) fanebladet. Det er den eneste del af Head taget som brugeren kan se direkte. -->
 </head>
+<!-- afsluting af head tagget. -->
 <body>
+<!-- Body tagget indeholder alt hvad brugeren kan se og arbejde med på hjemmesiden. -->
     <header>
+        <!-- Header er et semantiske tag der bruges til søgemaskine optimering og general orden. Den burde altid være øverst af de tre semantiske tags. (header, main, fodder.) -->
         <a href="tags.html">HTML intro</a>
+        <!-- Et a tag er et link. href er en attribut af a tagget som bestemer hvor linket føger hen. Det der står imellem a tagget er hvad der bliver lavet om til linket. -->
         <a href="index.html">CSS intro</a>
         <a href="colors.html">CSS farver</a>
         <a href="fonte.html">CSS tekst</a>
@@ -18,23 +26,32 @@
         <a href="menuer.html">CSS menuer</a>
         <a href="formularer.html">HTML formularer</a>
     </header>
-
+    <!-- afslutning af header tagget. -->
     <main>
+    <!-- Main er et semantisk tag som viser søgemaskiner hvad der er hjemme sidens focus. Indeholdet af main tagget er ofte det der ændre sig mest fra side til side selv hvis de er en del af samme hjemmeside. Header og Fodder er ofte de samme på alle dele af hjemmesiden.  -->
         <section>
+        <!-- Section tagget viser at alt indeholdet hænger sammen på en eller anden måde. -->
             <article>
+            <!-- Article tagget viser at indholdet er om et bestemt emne.  -->
                 <h1>HTML tags</h1>
+                <!-- h1 er en overskræft. Den størst overskrift. Søgemaskiner bruger dem til at vide hvad der er vigtigt på siden. Der er kun EN h1 per side. der kan være lige så mange h2 til h6 overskræfter som man vil. -->
 
                 <p>HTML kode består af tags - i næsten alle tilfælde et start tag og et slut-tag.</p>
+                <!-- p tagget er en linge af tekst. der forekommer et lingeskift efter /p -->
                 <p>Start-tag og slut-tag er altid ens, bortset fra at slut-tags indeholder en skråstreg, som fortæller, at her slutter det område, som du startede med dit start-tag.</p>
                 <p>Teksten her er f.eks. placeret mellem et p-starttag og et p-sluttag. P står for paragraph og angiver, at dette er et tekstafsnit.</p>
                 <p>Nogle få tags har ikke et sluttag - f.eks. img-tagget, som man bruger til at indsætte billeder:</p>
                 <img src="img/indsaet-billede.jpg">
+                <!-- fortæller at der skal vises et billede. src er en attibute der fortæller browseren hvor den skal hente bilidet fra. -->
             </article>
             <article>
                 <h2>De grundlæggende tags</h2>
+                <!-- h2 er en underovertekst. -->
 
                 <ul>
+                <!-- ul står for uordnet liste. ting i dette afsnit er opstillet i punkt from. -->
                     <li>html - start- og sluttag - omslutter hele din HTML-kode</li>
+                    <!-- li tagget er et liste objekt. -->
                     <li>head - start- og sluttag - indeholder informationer om siden, som brugeren ikke får at se</li>
                     <li>body - start- og sluttag - alt det indhold, som brugeren ser</li>
                     <li>h1 - start- og sluttag - overskrift 1 (øverste overskrift)</li>
@@ -64,6 +81,7 @@
                 <p>Header og footer går igen på alle sider og main indeholder de elementer, som er unikke på hver side.</p>
 
                 <p>Se eksempel på header og footer på <a href="https://www.vojensskøjteklub.dk/" target="_blank">Vojens Skøjteklubs hjemmeside</a>.</p>
+                <!-- Target="_blank" fortæller a tagget at det skal åbne linket i en ny side/fane. -->
 
                 <p>Main indeholder derudover section og article. En section kan indeholde flere articles og main kan indeholde flere sections.</p>
 
