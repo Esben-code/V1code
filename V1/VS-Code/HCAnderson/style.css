@@ -1,5 +1,6 @@
 * {
     color: darkslategray;
+    background-color: wheat;
 }
 
 h1, h2 {
@@ -12,4 +13,8 @@ li {
 
 nav {
     background-color: midnightblue;
+}
+
+a {
+    color: white
 }
