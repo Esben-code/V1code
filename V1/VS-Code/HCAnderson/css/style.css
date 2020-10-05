@@ -1,22 +1,28 @@
 * {
-    color: darkslategray;
-    background-color: wheat;
+    color:hsl(219, 25%, 25%);
+    background-color: hsl(39, 77%, 83%);
 }
 
+
+
 h1, h2 {
-    color: midnightblue;
+    color: hsl(219, 64%, 27%);
 }
 
 li {
-    color: steelblue;
+    color: hsl(207, 44%, 49%);
 }  
 
 nav, nav a {
-    background-color: midnightblue;
-    color: mintcream;
+    background-color: hsl(219, 64%, 27%);
+    color: hsl(39, 100%, 98%);
     text-decoration: none;
-    height: 50px;
+    padding: 25px;
     text-align: center;
+}
+
+main {
+    margin: 0px 25px;
 }
 
 img {
