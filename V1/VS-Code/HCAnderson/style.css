@@ -1,0 +1,15 @@
+* {
+    color: darkslategray;
+}
+
+h1, h2 {
+    color: midnightblue;
+}
+
+li {
+    color: steelblue;
+}  
+
+nav {
+    background-color: midnightblue;
+}
