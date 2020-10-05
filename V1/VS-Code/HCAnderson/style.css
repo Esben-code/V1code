@@ -15,3 +15,8 @@ nav, a {
     background-color: midnightblue;
     color: white
 }
+
+img {
+    height: auto;
+    width: 50%;
+}
