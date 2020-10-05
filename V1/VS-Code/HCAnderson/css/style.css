@@ -13,7 +13,8 @@ li {
 
 nav, nav a {
     background-color: midnightblue;
-    color: mintcream
+    color: mintcream;
+    text-decoration: none;
 }
 
 img {
