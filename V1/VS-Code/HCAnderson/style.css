@@ -11,10 +11,7 @@ li {
     color: steelblue;
 }  
 
-nav {
+nav, a {
     background-color: midnightblue;
-}
-
-a {
     color: white
 }
