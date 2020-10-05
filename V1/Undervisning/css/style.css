@@ -8,19 +8,45 @@ header, nav, footer {
     height: 50px;
 }
 
+main {
+    background-color: gold;
+}
+
+section {
+    background-color: mediumpurple;
+}
+
+article {
+    background-color: bisque;
+}
+
 header a, footer a {
     color: gainsboro;
     text-decoration: none;
 }
 
-h1, h2 {
-    background-color: azure;
-}
-
 h1 {
     color: midnightblue;
+    background-color: greenyellow;
 }
 
 h2 {
     color: steelblue;
+    background-color: lightyellow;
+}
+
+p {
+    background-color: yellow;
+}
+
+ul {
+    background-color: silver;
+}
+
+li {
+    background-color: plum;
+}
+
+a {
+    background-color: rosybrown;
 }

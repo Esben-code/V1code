@@ -3,7 +3,9 @@
     background-color: hsl(39, 77%, 83%);
 }
 
-
+body {
+    margin: 0px;
+}
 
 h1, h2 {
     color: hsl(219, 64%, 27%);
