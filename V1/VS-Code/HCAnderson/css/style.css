@@ -7,6 +7,10 @@ body {
     margin: 0px;
 }
 
+h1 {
+    font-family: 'Overpass', sans-serif;
+}
+
 h1, h2 {
     color: hsl(219, 64%, 27%);
 }
