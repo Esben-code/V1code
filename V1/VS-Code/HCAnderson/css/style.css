@@ -1,4 +1,5 @@
 body {
+    position: relative;
     margin: 0px;
     color:hsl(219, 25%, 25%);
     background-color: hsl(39, 77%, 83%);
@@ -40,6 +41,12 @@ li {
     color: hsl(207, 44%, 49%);
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 nav, nav a {
     background-color: hsl(219, 64%, 27%);
     color: hsl(39, 100%, 98%);
@@ -53,16 +60,31 @@ main {
     margin: 10px 25px;
 }
 
-.headerquote {
+.headerquote, .quote {
     background-color: hsla(0, 0%, 0%, 0.1);
-    margin: 1rem, 0;
     padding: 1rem;
     font-style: italic;
-    font-size: 20px;
-    border-left: 1px;
-    border-left-color: gray;
+    border-left: 1px solid gray;
 }
 
-p.headerquote {
+.headerquote p, .headerquote, .quote, .quote p{
     margin: 1rem, 0;
+}
+
+.headerquote {
+   font-size: 20px; 
+}
+
+.container {
+    position: relative;
+}
+
+.centerimgtext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    background-color: hsla(0, 0%, 50%, 0.5);
+
+    z-index: 10;
 }
