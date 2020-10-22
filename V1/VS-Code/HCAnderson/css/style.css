@@ -82,9 +82,9 @@ main {
 .centerimgtext {
     position: absolute;
     top: 50%;
-    width: 100%;
+    left: 50%;
     text-align: center;
-    background-color: hsla(0, 0%, 50%, 0.5);
+    background-color: hsla(0, 0%, 75%, 0.85);
 
     z-index: 10;
 }
