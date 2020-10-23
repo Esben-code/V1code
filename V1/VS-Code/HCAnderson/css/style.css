@@ -66,6 +66,25 @@ nav ul li {
     display: inline-block;
 }
 
+nav ul ul {
+    position: absolute;
+    top: 4rem;
+    z-index: 1;
+    visibility: hidden;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul ul li a {
+    display: block;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+} 
+
 main {
     margin: 1.5rem 1rem;
 }
