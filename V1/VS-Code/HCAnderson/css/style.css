@@ -52,10 +52,18 @@ nav, nav a {
     background-color: hsl(219, 64%, 27%);
     color: hsl(39, 100%, 98%);
     text-decoration: none;
-    padding: 25px;
+    padding: 0.8rem;
     text-align: center;
     text-transform: uppercase;
     z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
 }
 
 main {
