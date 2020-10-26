@@ -25,19 +25,49 @@
 
         <h1>Kontakt Os</h1>
     
-        <form action=""></form>
+        <form action="landingkontakt.html" method="GET">
+            <p>
+                <label for="fornavn">Fornavn:</label>
+                <input type="text" class="kontaktfelt" id="fornavn" name="fornavn" placeholder="Skriv dit fornavn" required>
+            </p>
 
-        <form action=""></form>
+            <span class="freespace"></span>
 
-        <form action=""></form>
+            <p>
+                <label for="efternavn">Efternavn:</label>
+                <input type="text" class="kontaktfelt" id="efternavn" name="efternavn" placeholder="Bobson" required>
+            </p>
 
-        <form action=""></form>
+            <span class="freespace"></span>
 
-        <form action=""></form>
+               <p>
+                    <label for="køn">Køn:</label>
+                    <span class="kønnavn">Man:</span> <input type="radio" class="kontaktfelt" id="køn" name="køn" value="Man">
+              </p>  
 
-        <form action=""></form>
+                <p> 
+                    <span class="freespace"></span> 
+                    <span class="kønnavn">Kvinde:</span> <input type="radio" class="kontaktfelt" id="køn" name="køn" value="Kvinde">
+                </p>
+                
+                <p>
+                    <span class="freespace"></span>
+                    <span class="kønnavn">Andet:</span> <input type="radio" class="kontaktfelt" id="køn" name="køn" value="Andet">
+                </p>
 
-        <form action=""></form>
+            <span class="freespace"></span>
+
+            <p>
+                <label for="besked">Besked:</label>
+                <textarea class="kontaktfelt" id="besked" name="besked" placeholder="Skriv din besked here." required></textarea>
+            </p>
+
+            <span class="freespace"></span>
+
+            <p>
+                <input type="submit" class="kontaktfelt" id="submit" name="submit">
+            </p>
+        </form>
 
     </main>
 </body>

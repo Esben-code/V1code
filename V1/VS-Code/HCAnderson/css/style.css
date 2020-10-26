@@ -123,3 +123,17 @@ main {
     background-color: hsla(0, 0%, 75%, 0.85);
     z-index: 10;
 }
+
+.kontaktfelt, .freespace, label, .kønnavn {
+    display: inline-block;
+
+}
+
+.kontaktfelt, .freespace, label {
+    min-width: 10rem;
+    max-width: 10rem;
+}
+
+.kønnavn {
+    width: 2rem;
+}
