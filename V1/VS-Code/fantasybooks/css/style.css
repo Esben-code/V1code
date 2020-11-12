@@ -1,21 +1,123 @@
+/* Mobil og konstante ting  */
+/* Map -> Mobil root - body - header - header img - nav - nav ul - nav ul li - nav ul li a - Main - h1...h6 - section - article - p - Footer - footer img - classes - Desktop root -||- */
+
 * {
     margin: 0rem;
     padding: 0rem;
 }
 
+body {
+    position: relative;
+    font-family: Lato;
+    line-height: 1.3rem;
+}
+
+header {
+    color: hsl(40, 75%, 83%);
+    background-color: hsl(0, 88%, 25%);
+    position: sticky;
+    top: 0rem;
+    display: block;
+    text-align: center;
+
+}
+
+header, footer {
+    font-family: 'Fira Sans';
+}
+
+header img, nav ul li {
+
+    display: inline;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 2rem;
+    line-height: 1rem;
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: hsl(40, 75%, 83%);
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'roboto slap';
+    color: hsl(338, 65%, 40%);
+    padding: 1rem;
+    text-align: center;
+    text-shadow: -2px -2px 2px hsla(338, 65%, 40%, 0.3);
+}
+
 main {
     color: hsl(22, 100%, 5%);
     background-color: hsl(40, 75%, 83%); 
+    padding: 1rem;
 }
 
-nav {
-    color: hsl(40, 75%, 83%);
-    background-color: hsl(0, 88%, 25%);
-
+main p {
+    text-align: center;
 }
 
 footer {
     color: hsl(40, 75%, 83%);
     background-color: hsl(0, 88%, 25%);
+}
+
+/* Here starter classes */
+
+.desktopimg {
+    display: none;
+}
+
+.logo {
+    border: hsl(338, 65%, 40%);
+}
+
+.icon {
+    max-width: 2rem;
+    max-height: 2rem;
+}
+
+.headerflex {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: inherit;
+}
+
+.footerflex {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: inherit;
+}
+
+.footerinfo {
+    width: 33.33%;
+    padding: 1rem;
+    text-align: center;
+    background-color: inherit;
+    display: inline-block;
+}
+
+.footer-center {
+    float: right;
+}
+
+.footer-right {
+    float: right;
+}
+
+/* desktop styles */
+
+@media only screen and (min-width: 500px) {
+
+/* desktop classes */
+
+/* .desktopimg {
+    display: inline-block;
+} */
 
 }
