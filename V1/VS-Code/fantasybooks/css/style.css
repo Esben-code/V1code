@@ -1,0 +1,21 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+main {
+    color: hsl(22, 100%, 5%);
+    background-color: hsl(40, 75%, 83%); 
+}
+
+nav {
+    color: hsl(40, 75%, 83%);
+    background-color: hsl(0, 88%, 25%);
+
+}
+
+footer {
+    color: hsl(40, 75%, 83%);
+    background-color: hsl(0, 88%, 25%);
+
+}
