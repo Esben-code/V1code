@@ -107,6 +107,7 @@ main section article img
 .side ul 
 {
     height: 100%;
+    width: 120px;
     display: block;
 }
 
