@@ -32,6 +32,11 @@ body
     line-height: 1.5;
 }
 
+a:hover 
+{
+    opacity: 0.5;
+}
+
 img
 {
     

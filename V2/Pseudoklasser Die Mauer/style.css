@@ -1,0 +1,57 @@
+* 
+{
+    border: 0px;
+    margin: 0px;
+}
+
+header
+{
+    display: inline;
+    float: right;
+    background-color: indigo;
+    height: 100px;
+    width: 100%;
+}
+
+header img 
+{
+    display: block;
+    height: 100px;
+    width: auto;
+}
+
+header img:first-of-type
+{
+    float: left;
+}
+
+.top ul, footer 
+{
+    height: 40px;
+    width: 100%;
+}
+
+.top 
+{
+    background-color: rgb(123, 170, 77);
+}
+
+.top ul
+{
+    display: inline;
+    background-color: lightcoral;
+    justify-content: space-evenly;
+}
+
+.top ul li
+{
+    display: block;
+    float: left;
+    margin: 5px;
+}
+
+.side 
+{
+    float: left;
+    display: inline;
+}
