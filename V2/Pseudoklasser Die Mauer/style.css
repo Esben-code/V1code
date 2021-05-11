@@ -4,6 +4,12 @@
     margin: 0px;
 }
 
+body 
+{
+    max-width: 1200px;
+    
+}
+
 header
 {
     display: inline;
@@ -15,7 +21,7 @@ header
 
 header img 
 {
-    display: block;
+    display: inline-block;
     height: 100px;
     width: auto;
 }
@@ -25,33 +31,94 @@ header img:first-of-type
     float: left;
 }
 
+header, .side 
+{
+    background-color: #CCCCCC;
+}
+
 .top ul, footer 
 {
     height: 40px;
     width: 100%;
+    background-color: #565952;
 }
 
 .top 
 {
-    background-color: rgb(123, 170, 77);
+    background-color: #565952;
+    text-align: center;
 }
 
 .top ul
 {
     display: inline;
-    background-color: lightcoral;
-    justify-content: space-evenly;
 }
 
 .top ul li
 {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav a, footer
+{
+    color: white;
+}
+
+main 
+{
+    position: relative;
+    display: inline-block;
+}
+
+main p 
+{
+    color: black;
+}
+
+main section 
+{
+    display: inline-block;
+    height: 100%;
+    width: 45%;
+    padding: 1rem;
+}
+
+main section article 
+{
     display: block;
+    height: 50%;
+    width: 100%;
+}
+
+main section article img 
+{
     float: left;
-    margin: 5px;
+    margin: 1rem;
 }
 
 .side 
 {
     float: left;
-    display: inline;
+    display: block;
+    height: 100%;
+}
+
+.side ul 
+{
+    height: 100%;
+    display: block;
+}
+
+.side li 
+{
+    display: block;
+    background-color: rgba(50, 54, 84, 0.8);
+}
+
+footer 
+{
+    text-align: center;
+    display: block;
+    bottom: 40px;
 }
