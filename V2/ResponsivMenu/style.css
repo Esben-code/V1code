@@ -51,6 +51,12 @@ nav ul li:hover
     background-color: hsla(0, 0%, 100%, 0.3);
 }
 
+nav ul li h2 
+{
+    color: ghostwhite;
+    font-size: 24px;
+}
+
 nav ul li a
 {
     text-decoration: none;
@@ -98,7 +104,16 @@ nav .menu-btn:checked ~ ul
     display: flex;
     flex-direction: column;
     
-    
+}
+
+nav .menu-btn:checked ~ .menuicon 
+{
+    display: none;
+}
+
+nav .menu-btn:checked ~ .closeicon 
+{
+    display: block;
 }
 
 /* Særlig styling til desktop - minimum viewport bredde på 768 pixels */
