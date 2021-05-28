@@ -4,6 +4,20 @@
 {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+
+ @keyframes SpinRound {
+    0% {transform: translateX(100%) rotateY(0deg);}
+    100% {transform: translateX(0%) rotateY(360deg);}
+    
+} 
+
+@keyframes Enlarge {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1.2);}
+    
 }
 
 body
@@ -16,9 +30,22 @@ main section
     margin: 0.5rem;
 }
 
+main div h1 
+{
+    animation-name: SpinRound;
+    animation-duration: 2s;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards; 
+}
+
 main section article img
 {
     width: 100%;
+}
+
+main div:first-of-type 
+{
+    background-color: darkslategray;
 }
 
 h1
@@ -79,7 +106,7 @@ nav ul li ul
 {
     background-color: hsla(0, 0%, 80%, 0.5);
     text-transform: none;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 nav ul li a
@@ -173,6 +200,28 @@ nav .menu-btn:checked ~ul li img
     margin-right: 10px;
 }
 
+nav .menu-btn:checked ~ul li .submenu-btn
+{
+    display: block;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    margin-top: 5px;
+    z-index: 7;
+    opacity: 0;
+}
+
+nav .menu-btn:checked ~ul li .submenu-btn:checked ~ul 
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    position: relative;
+}
+
 /* Pil nederst i højre hjørne, som altid kan føre brugeren til toppen. Dette styler den hvide cirkel bag pilen */
 main>span
 {
@@ -185,14 +234,27 @@ main>span
     right: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;        
+    align-items: center;   
+    
 }
 
 /* Styling af selve til-top pil billedet */
 main>span img
 {
     width: 30px;
+    transform: rotate(180deg);
 }
+
+ main>span:hover
+{
+    
+    animation-name: Enlarge;
+    animation-duration: 1.2s;
+    animation-delay: 0ms;
+    animation-fill-mode: both;
+
+
+} 
 
 /* Særlig styling til desktop - minimum viewport bredde på 768 pixels */
 @media only screen and (min-width: 768px)

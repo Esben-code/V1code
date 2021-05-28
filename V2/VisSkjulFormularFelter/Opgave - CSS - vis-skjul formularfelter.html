@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Grønne Drømme</title>
+</head>
+<body>
+    
+    <header>
+    </header>
+
+    <nav>
+        
+    </nav>
+    <main>
+        <h1>Kontakt os</h1>
+        <section>
+            <article>
+                <form method="GET">
+                    <p>
+                        <label for="navn">Navn: </label>
+                        <input type="text" name="navn" required>
+                    </p>
+                    <p>
+                        <label for="email">E-mail adresse: </label>
+                        <input type="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="besked">Besked: </label><br>
+                        <textarea name="besked" placeholder="indtast din besked..."></textarea>
+                    </p>
+                
+                    <label for="newplant">Ny plante til databasen:</label>
+                    <input type="checkbox" name="newplant" class="chk_newplant">
+                    
+                    <div>
+                        <p>
+                            <label for="plantname">Plantens danske navn: </label>
+                            <input type="text" name="plantname">
+                        </p>
+                        <p>
+                            <label for="plantvariant">Plantens variant: </label>
+                            <input type="text" name="plantvariant">
+                        </p>
+                        <p>
+                            <label for="plantbotname">Plantens botaniske navn: </label>
+                            <input type="text" name="plantbotname">
+                        </p>
+                        <p>
+                            <label for="planttype">Plantens type: </label>
+                            <input type="text" name="planttype">
+                        </p>
+                        <p>
+                            <label for="plantheight">Plantens højde: </label>
+                            <input type="number" name="plantheight"> cm
+                        </p>
+                        <p>
+                            <label for="plantrowdist">Plantens rækkeafstand: </label>
+                            <input type="number" name="plantrowdist"> cm
+                        </p>
+                        <p>
+                            <label for="plantsowdepth">Plantens sådybde: </label>
+                            <input type="number" name="plantsowdepth"> cm
+                        </p>
+                        <p>
+                            <label for="plantlight">Plantens lysforhold: </label>
+                            <select name="plantlight">
+                                <option value="fuld sol">Fuld sol</option>
+                                <option value="delvis skygge">Delvis skygge</option>
+                                <option value="fuld skygge">Fuld skygge</option>
+                                <option value="andet">Andet</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="plantsowmonth">Planten forspires i: <br>(vælg flere med ctrl eller shift) </label>
+                            <select name="plantsowmonth" multiple size="12" class="sel_months">
+                                <option value="januar">Januar</option>
+                                <option value="februar">Februar</option>
+                                <option value="marts">Marts</option>
+                                <option value="april">April</option>
+                                <option value="maj">Maj</option>
+                                <option value="juni">Juni</option>
+                                <option value="juli">Juli</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="oktober">Oktober</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="plantoutmonth">Planten udplantes i: <br>(vælg flere med ctrl eller shift) </label>
+                            <select name="plantoutmonth" multiple size="12" class="sel_months">
+                                <option value="januar">Januar</option>
+                                <option value="februar">Februar</option>
+                                <option value="marts">Marts</option>
+                                <option value="april">April</option>
+                                <option value="maj">Maj</option>
+                                <option value="juni">Juni</option>
+                                <option value="juli">Juli</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="oktober">Oktober</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="plantgerm">Planten spirer efter ca.: </label>
+                            <input type="number" name="plantgerm"> dage
+                        </p>
+                        <p>
+                            <label for="plantharvest">Planten er klar til høst efter ca.: </label>
+                            <input type="number" name="plantharvest"> dage
+                        </p>
+                        <p>
+                            <label for="plantdesc">Plantebeskrivelse: </label>
+                            <textarea name="plantdesc" placeholder="Udfyld her..."></textarea>
+                        </p>
+                    </div>
+                    <p>
+                        <button type="submit" value="indsend">Indsend</button>
+                    </p>
+                </form>
+            </article>
+        </section>
+
+    </main>
+    
+    <footer>
+        <p>&copy; Grønne Drømme 2021</p>
+    </footer>
+
+</body>
+</html>

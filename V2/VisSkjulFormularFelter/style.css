@@ -1,0 +1,63 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+main 
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+
+main article form 
+{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1.5rem;
+}
+
+main article form div 
+{
+    display: none;
+}
+
+main article form .chk_newplant:checked ~div 
+{
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-end;
+    
+}
+
+p 
+{
+    padding: 0.5rem;
+    max-width: 450px;
+}
+
+p input, p textarea, p select  
+{
+    float: right;
+    line-height: 100%;
+    overflow-y: scroll;
+}
+
+p textarea 
+{
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 75px;
+}
