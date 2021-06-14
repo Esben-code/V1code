@@ -108,16 +108,16 @@ formMail.querySelector('#inputSubmitMail').addEventListener(
         let mail = formMail.querySelector('#inputMailTxt').value;
         let re = /\w{2,99}@.*\..*/
 
-        console.log(mail)
-        console.log(re)
+        console.log(mail);
+        console.log(re);
 
         if (mail.search(re) == -1) {
-            alert('This mail is NOT valid.')
+            alert('This mail is NOT valid.');
         }
         else 
         {
-            alert('This mail is valid.')
+            alert('This mail is valid.');
         }
 
-})
+});
 
