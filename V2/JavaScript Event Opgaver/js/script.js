@@ -13,11 +13,14 @@ function CreateBreakerLine() //this function makes p tag with lines of slashes
 
 document.querySelector("button").addEventListener("click", () => {console.dir("hello world"); alert("Hello world!")});
 
+////////////////////////////////////////////////////////////
+
 document.querySelectorAll("li").forEach(x => { x.addEventListener("click", () => {console.dir(x.innerHTML); alert(x.innerHTML)})});
 
-document.querySelector(".colordiv").addEventListener("click", () => { document.querySelector(".colordiv").style.backgroundColor = "yellow" });
 
-CreateBreakerLine();
+////////////////////////////////////////////////////////////
+
+document.querySelector(".colordiv").addEventListener("click", () => { document.querySelector(".colordiv").style.backgroundColor = "yellow" });
 
 
 //////////////////////////////////////////////////////////// 
@@ -70,7 +73,7 @@ formMoms.querySelector('#submitMoms').setAttribute('type', "submit");
 
 formMoms.querySelector('#submitMoms').addEventListener("click", 
 (x) => {  
-    x.preventDefault()
+    x.preventDefault();
 
     let baseNr = Number(formMoms.querySelector('#numberMoms1').value);
     let moms = Number(baseNr * 0.25);
@@ -81,11 +84,40 @@ formMoms.querySelector('#submitMoms').addEventListener("click",
     console.log('Discounted: ' + discountedNr);
     console.log('total price: ' + (discountedNr + moms));
 
-})
+});
 
 CreateBreakerLine();
 
 ////////////////////////////////////////////////////////////
 
+let formMail = document.createElement('form');
+let inputMailTxt = document.createElement('input');
+let inputMailSubmit = document.createElement('input');
 
+document.querySelector('main').appendChild(formMail);
+formMail.appendChild(inputMailTxt).setAttribute("id", "inputMailTxt");
+formMail.appendChild(inputMailSubmit).setAttribute("id", "inputSubmitMail");
+
+formMail.querySelector('#inputMailTxt').setAttribute('type', "text");
+formMail.querySelector('#inputSubmitMail').setAttribute('type', "submit");
+
+formMail.querySelector('#inputSubmitMail').addEventListener(
+    "click", (x) => {
+        x.preventDefault();
+
+        let mail = formMail.querySelector('#inputMailTxt').value;
+        let re = /\w{2,99}@.*\..*/
+
+        console.log(mail)
+        console.log(re)
+
+        if (mail.search(re) == -1) {
+            alert('This mail is NOT valid.')
+        }
+        else 
+        {
+            alert('This mail is valid.')
+        }
+
+})
 
