@@ -106,7 +106,7 @@ formMail.querySelector('#inputSubmitMail').addEventListener(
         x.preventDefault();
 
         let mail = formMail.querySelector('#inputMailTxt').value;
-        let re = /\w{2,99}@.*\..*/
+        let re = /\w{2,99}@.+\..+/
 
         console.log(mail);
         console.log(re);

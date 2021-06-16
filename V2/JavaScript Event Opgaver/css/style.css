@@ -8,6 +8,7 @@ body
 {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
 }
 
@@ -20,4 +21,34 @@ body
 {
     display: flex;
     flex-direction: row;
+    overflow: auto;
+    align-items: center;
+    list-style: none;
+}
+
+ul li img:hover, .overlay:hover 
+{
+    cursor: pointer;
+}
+
+.overlay
+{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background-color: hsla(0, 0%, 10%, 0.9);
+
+}
+
+@media only screen and (min-width: 1200px) 
+{
+    .gallery 
+    {
+        margin-top: 50px;
+    }
 }
