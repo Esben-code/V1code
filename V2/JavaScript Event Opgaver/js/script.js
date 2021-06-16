@@ -125,6 +125,14 @@ CreateBreakerLine();
 
 ////////////////////////////////////////////////////////////
 
+let gal = document.querySelector("#gallery")
 
+gal.addEventListener(
+    "click", (e) => {
+        e.preventDefault();
+
+        e.target
+
+    });
 
 
