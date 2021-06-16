@@ -1,0 +1,23 @@
+* 
+{
+    padding: 0%;
+    margin: 0%;
+}
+
+body 
+{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.gallery 
+{
+    max-width: 1280px;
+}
+
+.gallery ul
+{
+    display: flex;
+    flex-direction: row;
+}

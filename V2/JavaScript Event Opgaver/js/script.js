@@ -45,15 +45,15 @@ formPlus.querySelector('#submitPlus').setAttribute('type', "submit");
 
 formPlus.querySelector('#submitPlus').addEventListener("click", 
 (x) => {  
-    x.preventDefault()
+    x.preventDefault();
 
     let nr1 = Number(formPlus.querySelector('#number1').value);
     console.log(nr1);
 
     let nr2 = Number(formPlus.querySelector('#number2').value);
-    console.log(nr2)
+    console.log(nr2);
 
-    alert(nr1 + nr2)
+    alert(nr1 + nr2);
 })
 
 CreateBreakerLine(); //calls the function.
@@ -120,4 +120,11 @@ formMail.querySelector('#inputSubmitMail').addEventListener(
         }
 
 });
+
+CreateBreakerLine();
+
+////////////////////////////////////////////////////////////
+
+
+
 
