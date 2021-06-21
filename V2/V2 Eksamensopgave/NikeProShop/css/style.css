@@ -1,0 +1,12 @@
+/* Mobil styling */
+
+
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Her starter Desktop styling */
+
+@media only screen and (min-width: 1200px) {}
