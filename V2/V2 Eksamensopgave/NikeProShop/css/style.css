@@ -1,5 +1,9 @@
 /* Mobil styling */
 
+/* font-family: 'Dela Gothic One', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
 
 * 
 {
@@ -7,6 +11,23 @@
     padding: 0;
     background-color: hsl(33, 32%, 95%);
     color: hsl(33, 86%, 8%);
+}
+
+body 
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav 
+{
+    position: relative;
 }
 
 nav ul
@@ -37,9 +58,14 @@ nav ul li a
 }
 
 /* Fælles styling for checkbox og menuikoner */
-nav .menu-btn, nav>img
+nav.menu-btn, nav>img, header img 
 {
     height: 40px;
+}
+
+nav .menu-btn, nav>img
+{
+
     position: absolute;
     top: 5px;
     right: 10px;
@@ -88,7 +114,43 @@ nav .menu-btn:checked ~ .closeicon
     display: block;
 }
 
+ main 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "slide" "slide" "slide"
+    "headline" "headline" "headline"
+    "sko1" "sko2" "sko3"
+    "sko4" "sko5" "sko6"
+    "sko7" "sko8" "sko9"
+} 
+
+ footer 
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "header"
+} 
+
+
 
 /* Her starter Desktop styling */
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) 
+{
+    footer 
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "topleft" "topmiddle" "topright"
+        "midleft" "midmiddle" "midright"
+        "botleft" "botmiddle" "botright"
+    } 
+    
+}
