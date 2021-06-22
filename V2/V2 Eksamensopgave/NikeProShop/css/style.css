@@ -5,6 +5,12 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif; */
 
 
+@keyframes Enlarge {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+
 * 
 {
     margin: 0;
@@ -16,18 +22,31 @@ font-family: 'Open Sans', sans-serif; */
 body 
 {
     font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 10rem 5fr 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+    margin: auto;
 }
 
 header 
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: inline;
+    height: 10%;
+    margin: auto;
+    grid-area: header;
 }
 
 nav 
 {
     position: relative;
+    background-color: hsl(33, 37%, 76%);
+    font-family: 'Montserrat', sans-serif;
+    grid-area: nav;
 }
 
 nav ul
@@ -37,16 +56,16 @@ nav ul
     list-style-type: none;
     text-transform: uppercase;
     font-size: 24px;
+    background-color: hsl(33, 37%, 76%);
 }
 
 nav ul li:hover 
 {
-    background-color: hsla(0, 0%, 100%, 0.3);
+    background-color: hsla(33, 37%, 100%, 0.3);
 }
 
 nav ul li h2 
 {
-    color: ghostwhite;
     font-size: 24px;
 }
 
@@ -58,7 +77,7 @@ nav ul li a
 }
 
 /* Fælles styling for checkbox og menuikoner */
-nav.menu-btn, nav>img, header img 
+nav .menu-btn, nav>img, header a, header img 
 {
     height: 40px;
 }
@@ -116,41 +135,384 @@ nav .menu-btn:checked ~ .closeicon
 
  main 
 {
+    max-width: 1000px;
+    justify-content: space-between;
+    grid-area: main;
+    margin: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
     grid-template-areas: 
-    "slide" "slide" "slide"
-    "headline" "headline" "headline"
-    "sko1" "sko2" "sko3"
-    "sko4" "sko5" "sko6"
-    "sko7" "sko8" "sko9"
+    "slideBox"
+    "articleBox"
+    "shoeBox"
+    "shoeBox"
+    "shoeBox";
+
 } 
+
+.slideshow 
+{
+    grid-area: slideBox;
+    display: none;
+    width: 100%;
+    height: auto;
+    max-height: inherit;
+    margin: 1rem 0rem;
+    padding: 5rem 0rem;
+}
+
+.slideshow img
+{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 2s;
+    width: 100%;
+    max-height: 50%;
+    height: inherit;
+    padding: 5rem;
+}
+
+.slideshow .currentImg
+{
+    opacity: 1;
+    position: absolute;
+    z-index: 5;
+    height: inherit;
+}
+
+
+
+.dot
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 80%, 0.8);
+    margin: 0 5px;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+}
+
+.dotArea .active
+{
+    background-color: hsla(0, 0%, 40%, 0.8);
+}
+
+.dotArea
+{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+.slideshow img
+{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 2s;
+    width: 100%;
+    max-height: 35%;
+    height: inherit;
+    padding: 1rem;
+    margin-bottom: 13rem;
+}
+
+.slideshow .currentImg
+{
+    opacity: 1;
+    position: absolute;
+    z-index: 5;
+    height: inherit;
+}
+
+.dot
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 80%, 0.8);
+    margin: 0 5px;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+}
+
+.dotArea .active
+{
+    background-color: hsla(0, 0%, 40%, 0.8);
+}
+
+.dotArea
+{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+
+.articleBox 
+{
+    grid-area: articleBox;
+    display: block;
+    margin: 1rem;
+}
+
+.shoeBox 
+{
+    margin: 1rem;
+    grid-area: shoeBox;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "shoeHeadline"
+    "shoe1" 
+    "shoe2" 
+    "shoe3";
+    justify-content: center;
+}
+
+
+
+/* Shoe grid area naming */
+
+.shoeHeadline 
+{
+    grid-area: shoeHeadline;
+    width: 100%;
+}
+
+.shoe1 
+{
+    grid-area: shoe1;
+}
+
+.shoe2 
+{
+    grid-area: shoe2;
+}
+
+.shoe3 
+{
+    grid-area: shoe3;
+}
+
+.shoe4 
+{
+    grid-area: shoe4;
+}
+
+.shoe5 
+{
+    grid-area: shoe5;
+}
+
+.shoe6 
+{
+    grid-area: shoe6;
+}
+
+.shoe7 
+{
+    grid-area: shoe7;
+}
+
+.shoe8 
+{
+    grid-area: shoe8;
+}
+
+.shoe9 
+{
+    grid-area: shoe9;
+}
+
+/* Footer grid naming area */
+
+.NPS 
+{
+    grid-area: NPS;
+}
+
+.ABN 
+{
+    grid-area: ABN;
+}
+
+.NSM 
+{
+    grid-area: NSM;
+}
+
+.KBH 
+{
+    grid-area: KBH;
+}
+
+.MTF 
+{
+    grid-area: MTF;
+}
+
+.SML 
+{
+    grid-area: SML;
+}
+
+.KTM 
+{
+    grid-area: KTM;
+}
+
+.OMN 
+{
+    grid-area: OMN;
+}
+
+.AAR 
+{
+    grid-area: AAR;
+}
+
+.ODE 
+{
+    grid-area: ODE;
+}
 
  footer 
 {
+    grid-area: footer;
+    font-family: 'Montserrat', sans-serif;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: 
-    "header"
+    "NPS KTM"
+    "NSM SML"
+    "ABN MTF"
+    "OMN KBH"
+    "AAR ODE";
+    padding: 2.5%;
+    font-weight: bold;
+    background-color: hsl(33, 37%, 76%);
 } 
+
+footer span 
+{
+    margin: 1%;
+}
+
+footer span, footer span p, footer span a, footer span a img 
+{
+    background-color: inherit;
+}
+
+footer img 
+{
+    height: 3rem;
+    width: 3rem;
+}
+
+.mobilImg 
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.shoe4, .shoe5, .shoe6, .shoe7, .shoe8, .shoe9 
+{
+    display: none;
+}
+
+.overlay
+{
+    display: none;
+}
 
 
 
 /* Her starter Desktop styling */
 
-@media only screen and (min-width: 1200px) 
+@media only screen and (min-width: 720px) 
 {
+
+    .mobilImg 
+    {
+        display: none;
+    }
+
+    .slideshow 
+    {
+        
+        width: 100%;
+        display: block;
+        margin: 1rem 0rem;
+        padding: auto;
+    }
+
+    .slideshow img 
+    {
+        overflow: hidden;
+    }
+
+    .shoeBox 
+    {
+        grid-area: shoeBox;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "shoeHeadline shoeHeadline shoeHeadline" 
+        "shoe1 shoe2 shoe3"
+        "shoe4 shoe5 shoe6"
+        "shoe7 shoe8 shoe9";
+    }
+
+.shoe4, .shoe5, .shoe6, .shoe7, .shoe8, .shoe9 
+{
+    display: block
+}
+
     footer 
     {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "topleft" "topmiddle" "topright"
-        "midleft" "midmiddle" "midright"
-        "botleft" "botmiddle" "botright"
-    } 
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "NPS NPS NPS"
+        "ABN MTF KTM"
+        "OMN NSM SML"
+        "KBH AAR ODE";
+    }  
     
+    .overlay
+    {
+        position: fixed;
+        z-index: 99; 
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: hsla(0,0%,10%,0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .shoeBox img:hover 
+    {
+        cursor: pointer;
+        box-shadow: 2px 4px hsl(205, 90%, 24%);  
+        animation-name: Enlarge;
+        animation-duration: 1.2s;
+        animation-delay: 0ms;
+        animation-fill-mode: both;
+
+
+    }
+
 }
