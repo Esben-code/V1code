@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  SCSS Document  */
 @import url("https://fonts.googleapis.com/css?family=Droid+Sans|Oswald");
 body {
@@ -6,9 +7,9 @@ body {
   line-height: 1.3em;
   margin: 0;
   padding: 0;
-  background: #2f6cb9 url(images/pattern.png) repeat 0 0;
+  background: #7c3690 url(images/pattern.png) repeat 0 0;
   background-size: 20px auto;
-  color: #2f6cb9;
+  color: #793ca0;
 }
 
 h1 {
@@ -19,7 +20,7 @@ h1 {
   bottom: 10px;
   left: 0;
   padding: 25px 100px 25px 55px;
-  background-color: #2f6cb9;
+  background-color: #6d3690;
 }
 
 h2 {
@@ -48,7 +49,7 @@ main::after {
 
 header {
   height: 150px;
-  background: #2f6cb9 url(images/banner.png) no-repeat center top;
+  background: #793ca0 url(images/banner.png) no-repeat center top;
   position: relative;
 }
 
@@ -71,12 +72,14 @@ aside {
 
 aside > div {
   padding: 10px 15px;
-  border: 1px solid #2f6cb9;
-  color: #2f6cb9;
+  border: 1px solid #63a03c;
+  color: #63a03c;
+  background-color: rgba(99, 160, 60, 0.1);
 }
 
+/* kunne også havde brugt scale-color($color_3, $alpha: -0.9) */
 aside > div h3 {
-  background-color: #2f6cb9;
+  background-color: #63a03c;
   color: #fff;
   margin: -10px -15px 15px -15px;
   padding: 8px 5px 12px 15px;
@@ -85,12 +88,12 @@ aside > div h3 {
 .bar {
   width: 100%;
   height: 15px;
-  background-color: #20589f;
+  background-color: #753388;
 }
 
 .bar div {
   width: 50%;
   height: inherit;
-  background-color: #4e84c8;
+  background-color: #9c44b5;
 }
 /*# sourceMappingURL=style.css.map */
