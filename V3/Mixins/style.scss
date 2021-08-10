@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Domine:400,700|Vast+Shadow');
+@import "_mixins.scss";
 
 body {
 	margin: 0;
@@ -59,15 +60,38 @@ h3 {
 p { margin: 0 0 .7em 0; }
 
 
-a.btn {
-	display: inline-block;
-	padding: 4px 16px 2px 16px;	
-	border-radius: 8px;
-	font-size: .9em;
-	border: 1px solid #fff;
-	text-decoration: none;
-	background-color: #fff;
+///nesting///
+
+main 
+{
+	article 
+	{
+		a.btn
+		{
+			@include button_normal(#fff, #bcc428, #bcc428);
+
+			&:hover
+			{
+				@include button_hover(#000, #fff);
+			}
+		}
+	}
+
+	aside 
+	{
+		a.btn
+		{
+			@include button_normal(#72b003, #fff, #fff);
+
+			&:hover
+			{
+				@include button_hover(#fff, rgba(255, 255, 255, 0.3));
+			}
+		}
+	}
+
 }
+
 
 
 
