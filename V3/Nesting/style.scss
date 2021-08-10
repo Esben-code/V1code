@@ -81,8 +81,20 @@ article
 			text-transform: uppercase;
 			letter-spacing: 5px;
 			padding: 8px;
-			border-bottom: 1px solid black ;
+			border-bottom: 1px solid hsla(0, 100, 0, 0.2)
 
+		}
+
+		p
+		{
+			font-size: 0,9em;
+		}
+
+		img 
+		{
+			height: 4.4em;
+			float: left;
+			margin: 5px 13px;
 		}
 
 	}

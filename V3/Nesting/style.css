@@ -72,6 +72,16 @@ article aside h2 {
   text-transform: uppercase;
   letter-spacing: 5px;
   padding: 8px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+article aside p {
+  font-size: 0,9em;
+}
+
+article aside img {
+  height: 4.4em;
+  float: left;
+  margin: 5px 13px;
 }
 /*# sourceMappingURL=style.css.map */
