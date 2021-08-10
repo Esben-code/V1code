@@ -78,6 +78,13 @@ main article a.btn {
   color: #fff;
 }
 
+main article a.btn::after {
+  content: '\25BA';
+  padding-left: 6px;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 main article a.btn:hover {
   color: #000;
   background-color: #fff;
@@ -92,6 +99,13 @@ main aside a.btn {
   text-decoration: none;
   background-color: #fff;
   color: #72b003;
+}
+
+main aside a.btn::after {
+  content: '\25BA';
+  padding-left: 6px;
+  font-size: 0.8em;
+  color: rgba(114, 176, 3, 0.7);
 }
 
 main aside a.btn:hover {

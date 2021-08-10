@@ -10,6 +10,15 @@
 	background-color: $bgcolor;
     color: $textcolor;
 
+    &::after
+    {
+        content: '\25BA';
+        padding-left: 6px;
+        font-size: 0.8em;
+        color: rgba($textcolor, 0.7);
+
+    }
+
 }
 
 @mixin button_hover($textcolor, $bgcolor) 
