@@ -15,4 +15,19 @@ h1 {
   font-family: "Noto Sans JP", sans-serif;
   padding-bottom: 2rem;
 }
+
+.imagegrid .item {
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  width: 19.2%;
+}
+
+.imagegrid .item:nth-child(5n) {
+  margin-right: 0;
+}
+
+.imagegrid img {
+  max-width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

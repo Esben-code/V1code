@@ -18,6 +18,7 @@ body
 {
     background-color: $color-bg;
     padding: 1rem;
+    
 }
 
 h1
@@ -27,3 +28,20 @@ h1
     padding-bottom: 2rem;
 }
 
+.imagegrid 
+{
+    .item
+    {
+        float: left;
+
+
+        @include imagegrid(5, 1%);
+        
+    }
+
+    img
+    {
+        max-width: 100%;
+    }
+
+}
