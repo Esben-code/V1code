@@ -1,0 +1,13 @@
+@mixin imagegrid($columns, $margin) 
+{
+    margin-right: $margin;
+    margin-bottom: $margin;
+    size: (100% - ($columns - 1) * $margin)/$columns;
+
+    &:nth-element(#{$columns})
+    {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+}

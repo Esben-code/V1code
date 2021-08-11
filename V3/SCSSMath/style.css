@@ -1,1 +1,18 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet&family=Noto+Sans+JP:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hahmlet", serif;
+}
+
+body {
+  background-color: #e5d8bd;
+  padding: 1rem;
+}
+
+h1 {
+  color: #2c426d;
+  font-family: "Noto Sans JP", sans-serif;
+  padding-bottom: 2rem;
+}
+/*# sourceMappingURL=style.css.map */

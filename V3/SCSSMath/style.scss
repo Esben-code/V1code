@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&family=Noto+Sans+JP:wght@300&display=swap');
+@import '_mixin.scss';
+
+$font-heading: 'Noto Sans JP', sans-serif;
+$font-main: 'Hahmlet', serif;
+
+$color-bg: hsl(40, 43%, 82%);
+$color-heading: hsl(220, 43%, 30%);
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: $font-main;
+}
+
+body
+{
+    background-color: $color-bg;
+    padding: 1rem;
+}
+
+h1
+{
+    color: $color-heading;
+    font-family: $font-heading;
+    padding-bottom: 2rem;
+}
+
