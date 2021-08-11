@@ -33,15 +33,45 @@ h1
     .item
     {
         float: left;
-
-
-        @include imagegrid(5, 1%);
         
     }
 
     img
     {
         max-width: 100%;
+        border-radius: 15px;
     }
+
+}
+
+@media only screen and (max-width: 600px)
+{
+
+    .imagegrid 
+    {
+        .item
+        {
+
+            @include imagegrid(5, 1%);
+        
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 601px)
+{
+
+    .imagegrid 
+    {
+        .item
+        {
+
+            @include imagegrid(7, 2%);
+        
+        }
+    }
+
 
 }
