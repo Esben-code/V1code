@@ -1,0 +1,25 @@
+@mixin box($columns, $margin, $bg-color)
+{
+
+    $boxside:(100% - ($columns - 1) * $margin)/$columns;
+
+    height: $boxside;
+    width: $boxside;
+    background-color: $bg-color;
+
+    &:nth-child(#{$columns}n)
+    {
+        margin-right: 0;
+    }
+}
+
+@mixin imagegrid()
+{
+    float: left;
+
+    @media only screen and (max-width: 600px) {}
+
+    @media only screen and (min-width: 601px) {}
+
+    @media only screen and (min-width: 1201px) {}
+}

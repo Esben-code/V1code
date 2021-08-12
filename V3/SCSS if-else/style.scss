@@ -1,0 +1,33 @@
+$blue: hsl(202, 74%, 64%);
+$total: 9;
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    .kasser
+    {
+
+        height: 100vh;
+
+        div
+        {
+            width: 100%;
+        }
+    }
+}
+
+@function fancyColor()
+{
+    @return $fancy;
+}
+
+@function calculateWidth() 
+{
+    @return $res
+}

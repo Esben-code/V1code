@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body .kasser {
+  height: 100vh;
+}
+
+body .kasser div {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
