@@ -3,11 +3,10 @@ header
     height: 50vh;
     background: url(../images/background.jpg) no-repeat center center;
     background-size: cover;
-    margin-bottom: 20px;
 }
 
-header img, #service img
+ul li img
 {
-    width: 100px;
+    width: 75px;
     display: block;
 }
