@@ -15,41 +15,90 @@
 
   </header>
 
-  <div class="navbar bg-dark navbar-dark navbar-expand-md nav-justified px-0 m-0">
-    <ul class="navbar-nav bg-dark container-fluid vw-100">
-      <li class="nav-item"><a href="index.html" class="navbar-brand"><img src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo"></a></li>
-      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
-      <li class="nav-item"><a class="nav-link" href="Behavioural.html">Behavioral Consultation</a></li>
-      <li class="nav-item"><a class="nav-link" href="Surgery.html">Surgery and Dental Services</a></li>
-      <li class="nav-item"><a class="nav-link" href="inhousediag.html">In-house Diagnostic Lab</a></li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid justify-content-center">
+      <a href="index.html" class="navbar-brand"><img src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo"></a>
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item dropdown">
+          <a href="#" class=" dropdown-toggle" data-bs-toggle="dropdown" role="button">Treatment</a>
+          <ul class="dropdown-menu">
+            <li class=""><a class="dropdown-item" href="Behavioural.html">Behavioral Consultation</a></li>
+            <li class=""><a class="dropdown-item" href="Surgery.html">Surgery and Dental Services</a></li>
+            <li class=""><a class="dropdown-item" href="inhousediag.html">In-house Diagnostic Lab</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="carousel" class="d-none d-lg-block carousel slide w-75 mx-auto" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/testimonial-janeh.jpg" class="d-block w-100" alt="Jane Photo">
+        <div class="carousel-caption d-none d-md-block bg-dark">
+          <h5>Jane & Tonto</h5>
+          <p>During the summer, our rabbit, Tonto, began to have severe redness and itching on his belly and feet. I'm very thankful to the veterinarians and staff at Wisdom for the excellent care Tonto received, and for nipping his allergies in the bud, so to speak.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/testimonial-johnb.jpg" class="d-block w-100" alt="John B Photo">
+        <div class="carousel-caption d-none d-md-block bg-dark">
+          <h5>John & Roxie</h5>
+          <p>The staff at Wisdom worked tirelessly to determine why our three-year old Golden Retriever, Roxie, started going into sudden kidney failure. They stabilized her and provided fluids until her kidneys were again functioning normally.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/testimonial-lorraines.jpg" class="d-block w-100" alt="Lorraine Photo">
+        <div class="carousel-caption d-none d-md-block bg-dark">
+          <h5>Lorraine & McAllister</h5>
+          <p>Wisdom Pet Medicine is the only clinic around that will even book pet fish for appointments. When our 13-year old Comet goldfish, McAllister, turned from silvery white to an angry red, we called around, urgently trying to find a veterinarian who could help. Wisdom not only got us in the same day, but also was able to diagnose McAllister as having a severe case of septicemia.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
   </div>
 
-<div class="container">
+  <div class="container d-block d-lg-none">
 
-<section class="content" id="testimonials">
-  <h2>Testimonials</h2>
+    <section class="content" id="testimonials">
+      <h2>Testimonials</h2>
 
-  <figure class="figure">
-    <img class="img-fluid figure-img" src="images/testimonial-janeh.jpg" alt="Jane Photo">
-    <figcaption class="figure-caption">During the summer, our rabbit, Tonto, began to have severe redness  and itching on his belly and feet. I'm very thankful to the veterinarians and staff at Wisdom for the excellent care Tonto received, and for nipping his allergies in the bud, so to speak.</figcaption>
-  </figure>
+      <figure class="figure">
+        <img class="img-fluid figure-img" src="images/testimonial-janeh.jpg" alt="Jane Photo">
+        <figcaption class="figure-caption">During the summer, our rabbit, Tonto, began to have severe redness  and itching on his belly and feet. I'm very thankful to the veterinarians and staff at Wisdom for the excellent care Tonto received, and for nipping his allergies in the bud, so to speak.</figcaption>
+      </figure>
 
-  <figure class="figure">
-    <img class="img-fluid figure-img" src="images/testimonial-johnb.jpg" alt="John B Photo">
-    <figcaption class="figure-caption">The staff at Wisdom worked tirelessly to determine why our three-year old Golden Retriever, Roxie, started going into sudden kidney failure. They stabilized her and provided fluids until her kidneys were again functioning normally.</figcaption>
-  </figure>
+      <figure class="figure">
+        <img class="img-fluid figure-img" src="images/testimonial-johnb.jpg" alt="John B Photo">
+        <figcaption class="figure-caption">The staff at Wisdom worked tirelessly to determine why our three-year old Golden Retriever, Roxie, started going into sudden kidney failure. They stabilized her and provided fluids until her kidneys were again functioning normally.</figcaption>
+      </figure>
 
-  <figure class="figure">
-    <img class="img-fluid figure-img" src="images/testimonial-lorraines.jpg" alt="Lorraine Photo">
-    <figcaption class="figure-caption">Wisdom Pet Medicine is the only clinic around that will even book pet fish for appointments. When our 13-year old Comet goldfish, McAllister, turned from silvery white to an angry red, we called around, urgently trying to find a veterinarian who could help. Wisdom not only got us in the same day, but also was able to diagnose McAllister as having a severe case of septicemia.</figcaption>
-  </figure>
+      <figure class="figure">
+        <img class="img-fluid figure-img" src="images/testimonial-lorraines.jpg" alt="Lorraine Photo">
+        <figcaption class="figure-caption">Wisdom Pet Medicine is the only clinic around that will even book pet fish for appointments. When our 13-year old Comet goldfish, McAllister, turned from silvery white to an angry red, we called around, urgently trying to find a veterinarian who could help. Wisdom not only got us in the same day, but also was able to diagnose McAllister as having a severe case of septicemia.</figcaption>
+      </figure>
 
-</section>
+    </section>
 
-</div><!-- content container -->
+  </div><!-- content container -->
 
-<script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
